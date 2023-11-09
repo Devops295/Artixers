@@ -1,0 +1,30 @@
+-----------------------------------
+AYUDA E INFORMACIÓN SOBRE artixers.
+-----------------------------------
+
+¿Qué es "artixers"?
+
+    artixers (escrito todo con minúsculas) es un panel de control de propiedades de usuarios y grupos, con el cual se pueden realizar varias tareas, tales como:
+
+        - consultar, crear y eliminar usuarios del sistema,
+        - consultar, crear y eliminar grupos de usuarios del sistema,
+        - añadir y quitar a usuarios de grupos,
+        - inspeccionar grupos para ver qué usuarios contienen,
+        - visualizar a qué grupos pertenecen los usuarios,
+        - etc.
+    
+¿Por qué se llama así?
+
+    El nombre de artixers viene de la conjunción del nombre del sistema operativo "Artix" (Arch Linux sin SystemD) y la palabra "users" (usuarios del sistema).
+    
+¿Por qué fue creado?
+
+    Porque no había (o es difícil encontrar con relativa facilidad) otra herramienta nativa que realizara las mismas tareas, es decir, un panel de control sencillo desde el cual poder gestionar todo lo referente a lo descrito más arriba, tal como -por ejemplo-, posee openSUSE en YaST. Existen herramientas de Gnome, de Mate, de Plasma, y tal vez de otros escritorios y/o comunidades, pero la idea era no integrar al sistema nada que no fuese "nativo", ya que artixers fue pensado para usuarios de los escritorios LXDE y XFCE y a su vez para usuarios de Arch o distribuciones derivadas de Arch, en primera instancia.
+    
+¿artixers fue creado para que funcione únicamente en Artix?
+
+    No; de hecho, artixers se ha probado durante su fase de desarrollo en Artix principalmente, y también en openSUSE, presentando un funcionamiento idéntico en ambos sistemas. artixers debería funcionar con la misma eficacia en cualquier sistema basado en Linux, e incluso también en BSD y sistemas basados en él, ya que está programado en BASH: idioma universal de sistemas estilo UNIX.
+
+¿Cuáles son sus dependencias?
+
+    Todos los programas utilizan dependencias, tanto directa y visiblemente, como indirecta y subrepticiamente. Pero al desarrollarse artixers, se ha tenido en cuenta todo lo que ya venía preinstalado en el sistema, de modo que no fuese necesario instalar nada más para que artixers funcionase correctamente. Aún así, no está de más saber qué comandos utiliza artixers para su funcionamiento interno: tput, sort, awk, tr, more, cat, realpath, dirname, wc, y los clásicos read, echo, clear, if, etc.
